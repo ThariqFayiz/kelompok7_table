@@ -219,3 +219,8 @@
 1301111156 c:\program files (x86)\codeblocks\mingw\include\oleidl.h
 	<objfwd.h>
 
+1666500802 source:c:\users\acer\documents\tablet\kelompok7_tablet\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<GL/glut.h>
+
