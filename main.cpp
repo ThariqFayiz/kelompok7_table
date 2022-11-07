@@ -28,6 +28,7 @@ float _angle = -50.0f;
 void drawScene()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    //glClearColor(1.0,1.0,1.0,1.0);
     glMatrixMode(GL_MODELVIEW); // keep it like this
     glLoadIdentity();
     glTranslatef(0.0f, 0.0f, -14.0f);
@@ -47,7 +48,7 @@ void drawScene()
     glLightfv(GL_LIGHT1, GL_DIFFUSE, lightColor1);
     glLightfv(GL_LIGHT1, GL_POSITION, lightPos1);
 
-    // hapus 3 baris ini supya berhenti berputar
+//     hapus 3 baris ini supya berhenti berputar
     glRotatef(10, 1.0f, 0.0f, 0.0f);
     glRotatef(-10, 0.0f, 0.0f, 1.0f);
     glRotatef(_angle, 0.0f, 1.0f, 0.0f);
@@ -63,10 +64,7 @@ void drawScene()
 
     glColor3f(1.1f, 1.1f, 1.1f);
     glBegin(GL_QUADS);
-    //Rizky Prasetya Ardana
-    // front depan atas
-    glColor3f(1.1f, 1.1f, 1.1f); // kalau mau ganti warna belakang tablet  ganti disinigl Hijau -> glColor3f (0.0,1.0,0.0);
-    // glNormal3f(-1.0f, 0.0f, 0.0f);
+    glColor3f(1.1f, 1.1f, 1.1f);
     glVertex3f(-0.9f, 0.2f, -1.8f);
     glVertex3f(0.9f, 0.2f, -1.8f);
     glVertex3f(0.9f, 3.5f, -1.8f);
@@ -80,7 +78,7 @@ void drawScene()
     //Andi Nur Hidayah
     // samping kiri atas
     //  glNormal3f(-1.0f, 0.0f, 0.0f);
-    glVertex3f(-0.f, 0.2f, -2.0f);
+    glVertex3f(-0.9f, 0.2f, -2.0f);
     glVertex3f(-0.9f, 3.5f, -2.0f);
     glVertex3f(-0.9f, 3.5f, -1.8f);
     glVertex3f(-0.9f, 0.2f, -1.8f);
@@ -139,4 +137,5 @@ int main(int argc, char **argv)
     update(0);
     glutMainLoop();
     return 0;
+    //bismillah
 }//cekkk
